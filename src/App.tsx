@@ -1,14 +1,16 @@
 import React from 'react';
-import { DAppProvider, ChainId } from '@usedapp/core'
+import { DAppProvider, ChainId, Kovan } from '@usedapp/core'
 import { Header } from "./components/Header"
 import { Container } from "@material-ui/core"
 import { Main } from "./components/Main"
-
+import { getDefaultProvider } from 'ethers'
 
 function App() {
   return (
     <DAppProvider config={{
-      supportedChains: [ChainId.Kovan],
+      readOnlyChainId: Kovan.chainId,
+      readOnlyUrls: { [Kovan.chainId]: getDefaultProvider('kovan'), },
+      networks: [Kovan],
       notifications: {
         expirationPeriod: 1000,
         checkInterval: 1000
