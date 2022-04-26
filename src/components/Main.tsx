@@ -57,7 +57,7 @@ export const Main = () => {
     ]
 
     return (<>
-        <h2 className={classes.title}>DAPP Token App</h2>
+        <h2 className={classes.title}>Paul's Organic Token Farm</h2>
         <YourWallet supportedTokens={supportedTokens} />
     </>)
 }

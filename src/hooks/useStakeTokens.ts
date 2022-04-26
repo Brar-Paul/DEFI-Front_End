@@ -17,6 +17,7 @@ export const useStakeTokens = (tokenAddress: string) => {
     const erc20ABI = ERC20.abi
     const erc20Interface = new utils.Interface(erc20ABI)
     const erc20Contract = new Contract(tokenAddress, erc20Interface)
+
     // Approve
     const { send: approveErc20Send, state: approveAndStakeErc20State } =
         useContractFunction(erc20Contract, "approve", {
