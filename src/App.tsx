@@ -4,6 +4,7 @@ import { Header } from "./components/Header"
 import { Container } from "@material-ui/core"
 import { Main } from "./components/Main"
 import { getDefaultProvider } from 'ethers'
+import { Footer } from "./components/Footer"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Container maxWidth="md">
         <Main />
       </Container>
+      <Footer />
     </DAppProvider>
   );
 }

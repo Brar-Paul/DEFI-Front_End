@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         padding: theme.spacing(4)
     },
+    container: {
+        textAlign: 'center',
+    }
 }))
 
 export const Main = () => {
@@ -72,7 +75,11 @@ export const Main = () => {
     ]
 
     return (<>
-        <h2 className={classes.title}>Paul's Organic Token Farm</h2>
+        <h1 className={classes.title}>Paul's Organic Token Farm</h1>
+        <p className={classes.title}>Please connect to Kovan Testnet. <br /> Test coin addresses can be found in config file in repo</p>
+        <div className={classes.container}>
+            <a className={classes.title} href="https://faucets.chain.link/">Click here for Kovan ETH</a>
+        </div>
         <YourWallet supportedTokens={supportedTokens} />
         <YourStaked supportedTokens={supportedTokens} />
     </>)
