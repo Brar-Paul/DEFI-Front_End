@@ -19,16 +19,24 @@ interface BalanceMsgProps {
     label: string
     amount: number
     tokenImgSrc: string
+    value: number
 }
 
-export const BalanceMsg = ({ label, amount, tokenImgSrc }: BalanceMsgProps) => {
+export const BalanceMsg = ({ label, amount, tokenImgSrc, value }: BalanceMsgProps) => {
     const classes = useStyles()
 
     return (
-        <div className={classes.container}>
-            <div>{label}</div>
-            <div className={classes.amount}>{amount}</div>
-            <img className={classes.tokenImg} src={tokenImgSrc} alt="token logo" />
-        </div>
+        <>
+            <div className={classes.container}>
+                <div>{label}</div>
+                <div className={classes.amount}>{amount}</div>
+                <img className={classes.tokenImg} src={tokenImgSrc} alt="token logo" />
+            </div>
+            <div className={classes.container}>
+                <div>Current Market Value: </div>
+                <div className={classes.amount}>${value}</div>
+                <div>USD</div>
+            </div>
+        </>
     )
 }

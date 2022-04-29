@@ -19,6 +19,7 @@ export type Token = {
     image: string
     address: string
     name: string
+    priceName: string
 }
 
 const useStyles = makeStyles((theme) => ({
@@ -50,27 +51,32 @@ export const Main = () => {
         {
             image: paul,
             address: paulTokenAddress,
-            name: "PAUL"
+            name: "PAUL",
+            priceName: "Dai"
         },
         {
             image: dai,
             address: fauTokenAddress,
-            name: "DAI"
+            name: "DAI",
+            priceName: "Dai"
         },
         {
             image: eth,
             address: wethTokenAddress,
-            name: "wETH"
+            name: "wETH",
+            priceName: "WETH"
         },
         {
             image: uni,
             address: uniTokenAddress,
-            name: "UNI"
+            name: "UNI",
+            priceName: "Uniswap"
         },
         {
             image: aud,
             address: audTokenAddress,
-            name: "AUD"
+            name: "AUDIUS",
+            priceName: 'Audius'
         }
     ]
 
