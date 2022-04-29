@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/DEFI-Front_End/static/css/main.70b2e45a.css",
+    "main.js": "/DEFI-Front_End/static/js/main.17eb2554.js",
+    "static/js/787.26204db3.chunk.js": "/DEFI-Front_End/static/js/787.26204db3.chunk.js",
+    "static/media/dapp.png": "/DEFI-Front_End/static/media/dapp.65519ee00e71d3116c8f.png",
+    "static/media/uni.png": "/DEFI-Front_End/static/media/uni.edb1490af61a4c0d0cde.png",
+    "static/media/aud.png": "/DEFI-Front_End/static/media/aud.5b3b825fa2b6ef6fa102.png",
+    "static/media/eth.png": "/DEFI-Front_End/static/media/eth.4aa4d7e0e1c35331bd89.png",
+    "index.html": "/DEFI-Front_End/index.html",
+    "main.70b2e45a.css.map": "/DEFI-Front_End/static/css/main.70b2e45a.css.map",
+    "main.17eb2554.js.map": "/DEFI-Front_End/static/js/main.17eb2554.js.map",
+    "787.26204db3.chunk.js.map": "/DEFI-Front_End/static/js/787.26204db3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70b2e45a.css",
+    "static/js/main.17eb2554.js"
+  ]
+}
